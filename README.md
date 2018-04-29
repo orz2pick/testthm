@@ -5,8 +5,8 @@ Theorem: Let p be a prime and a in Z such that p 不整除 a. Then,a^(p-1) ≡1 
 
 ##Proof:
 Consider the following two sets of equivalence classes :
-A = {[a], [2a], [3a], [4a], . . . , [(p − 1)a]}
-B={[1],[2],[3],[4],...,[p−1]}=Zp −{[0]}
+  A = {[a], [2a], [3a], [4a], . . . , [(p − 1)a]}
+  B={[1],[2],[3],[4],...,[p−1]}=Zp −{[0]}
 First, we want to show that A = B.
 Clearly, A ⊆ B since p devides a and p divides none of 1, 2, 3, . . . , p − 1.
 Now, suppose that ∃ r, s in N such that 1 ≤ r ≤ s ≤ p − 1 and [ra] = [sa].Then,
