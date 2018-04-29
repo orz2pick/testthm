@@ -1,37 +1,23 @@
-## Welcome to GitHub Pages
+## Fermat’s Little Theorem
 
-You can use the [editor on GitHub](https://github.com/orz2pick/testthm/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Theorem: Let p be a prime and a in Z such that p 不整除 a. Then,a^(p-1) ≡1 mod p.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/orz2pick/testthm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+##Proof:
+Consider the following two sets of equivalence classes :
+A = {[a], [2a], [3a], [4a], . . . , [(p − 1)a]}
+B={[1],[2],[3],[4],...,[p−1]}=Zp −{[0]}
+First, we want to show that A = B.
+Clearly, A ⊆ B since p devides a and p divides none of 1, 2, 3, . . . , p − 1.
+Now, suppose that ∃ r, s in N such that 1 ≤ r ≤ s ≤ p − 1 and [ra] = [sa].Then,
+[ra] − [sa] = 0
+r[a] − s[a] = 0
+(r−s)[a] = 0
+r−s=0,since[a] not congruent(同余) to 0 modp(sincep a)
+But,since r≤p and s≤p, r−s≡0（ modp） ⇒r=s.
+So, [a], [2a], [3a], · · · , [(p − 1)a] are all different mod p, which means that the cardinality of A is p − 1.
+And, since ♯A = p − 1, ♯B = p − 1 and A ⊆ B, we can conclude that A = B,that is the equivalence classes in A are congruent to the equivalence classes [等价类] of B under a certain rearrangement.
+Hence,
+a∗2a∗3a∗···∗(p−1)a = 1∗2∗3∗···∗p−1 （mod p）
+a^(p-1) ∗(p−1)! = (p−1)!
+a^(p-1) =1,since (p−1)!不等于0（mod p）.
